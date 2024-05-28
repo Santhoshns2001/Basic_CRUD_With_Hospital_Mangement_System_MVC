@@ -8,7 +8,7 @@ namespace CommonLayer.Model
 {
     public class DoctorModel
     {
-        public int DoctorId { get; set; }
+        public int Doctor_Id { get; set; }
         public string FullName { get; set; }
 
         public string Email { get; set; }

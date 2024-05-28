@@ -13,7 +13,7 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.DoctorId)
+                @Html.DisplayNameFor(model => model.Doctor_Id)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.FullName)
@@ -21,7 +21,6 @@
             <th>
                 @Html.DisplayNameFor(model => model.Email)
             </th>
-           
             <th>
                 @Html.DisplayNameFor(model => model.Contact)
             </th>
@@ -65,7 +64,7 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.DoctorId)
+                @Html.DisplayFor(modelItem => item.Doctor_Id)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.FullName)
@@ -73,7 +72,6 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Email)
             </td>
-           
             <td>
                 @Html.DisplayFor(modelItem => item.Contact)
             </td>
@@ -111,9 +109,9 @@
                 @Html.DisplayFor(modelItem => item.UpdatedAt)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("Edit", "UpdateDoctor", new {  id=item.Doctor_Id }) |
+                @Html.ActionLink("Details", "FetchByDoctorId", new {  doctorId=item.Doctor_Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Doctor_Id })
             </td>
         </tr>
 }

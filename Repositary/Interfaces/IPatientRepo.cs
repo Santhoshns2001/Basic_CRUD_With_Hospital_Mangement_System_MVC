@@ -12,5 +12,7 @@ namespace Repository.Interfaces
         public bool RegisterPatient(PatientModel patient);
 
         public List<PatientModel> GetAllPatient();
+
+        public PatientModel GetPatientById(int patientId);
     }
 }

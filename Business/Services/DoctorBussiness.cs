@@ -29,5 +29,21 @@ namespace Business.Services
         {
             return doctorRepo.FetchAllDocs();
         }
+
+        public DoctorModel FetchByDoctorId(int doctorId)
+        {
+            return doctorRepo.FetchByDoctorId(doctorId);
+        }
+
+
+        public bool UpdateDoctor(DoctorModel doctorModel)
+        {
+            return doctorRepo.UpdateDoctor(doctorModel);
+        }
+
+        public bool DeleteDoctorRecord(int doctorId)
+        {
+            return doctorRepo.DeleteDoctorRecord(doctorId);
+        }
     }
 }

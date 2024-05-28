@@ -27,10 +27,10 @@ namespace Hospital_Management_System.Controllers
         [HttpPost]
         public IActionResult RegisterDoc(DoctorModel doctorModel )
         {
-            bool v = doctorBuss.RegisterDoc(doctorModel);
-            if (v)
-            return View("Index");
-            return View(doctorModel);
+            bool result = doctorBuss.RegisterDoc(doctorModel);
+            if (result)  return RedirectToAction("FetchAllDoctors"); 
+             return NotFound("Failed to insert doctor"); 
+            
 
         }
 
@@ -39,7 +39,7 @@ namespace Hospital_Management_System.Controllers
         public IActionResult FetchAllDoctors()
         {
             List<DoctorModel> doctors = doctorBuss.FetchAllDocs().ToList();
-            if (doctors.Any())
+            if (doctors!=null)
             {
                 return View(doctors);
             }
@@ -48,6 +48,78 @@ namespace Hospital_Management_System.Controllers
                 return View("Index");
             }
         }
+
+        [HttpGet]
+        [Route("GetById/{DoctorId}")]
+        public IActionResult FetchByDoctorId(int doctorId)
+        {
+            DoctorModel doctor = doctorBuss.FetchByDoctorId(doctorId);
+
+            if (doctor != null)
+            {
+                return View(doctor);
+            }
+            else
+            {
+                return View("Index");
+            }
+        }
+
+        [HttpGet]
+        public IActionResult UpdateDoctor(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            DoctorModel doctor = doctorBuss.FetchByDoctorId(id);
+            if (doctor == null)
+            {
+                return NotFound();
+            }
+            return View(doctor);
+        }
+         
+        [HttpPost]
+        public IActionResult UpdateDoctor(int id, DoctorModel doctor)
+        {
+            if (id != doctor.Doctor_Id)
+                return NotFound("Missmatch id");
+            else
+            {
+                bool response = doctorBuss.UpdateDoctor(doctor);
+                return RedirectToAction("FetchAllDoctors");
+
+            }
+            
+        }
+
+        [HttpGet]
+        public IActionResult Delete(int id)
+        {
+            if (id == null || id==0)
+            {
+                return NotFound("id is "+id);
+            }
+            DoctorModel doctor = doctorBuss.FetchByDoctorId(id);
+            if(doctor == null)
+            {
+                return NotFound("doctor not found");
+            }
+            return View(doctor);
+        }
+
+        [HttpPost,ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int id)
+        {
+            if (id == 0)
+                return View("Index");
+           bool result= doctorBuss.DeleteDoctorRecord(id);
+            if(result) return RedirectToAction("FetchAllDoctors");
+            return NotFound("Failed to delete");
+        }
+
 
     }
 }
