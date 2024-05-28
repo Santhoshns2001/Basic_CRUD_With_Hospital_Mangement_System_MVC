@@ -74,17 +74,34 @@ namespace Repository.Services
                     {
                         PatientModel patientModel = new PatientModel()
                         {
+                            PatientId = (int)sqlDataReader["PatientId"],
                             FullName = (string)sqlDataReader["FullName"],
-
-
-
+                            Email = (string)sqlDataReader["Email"],
+                            Contact = (long)sqlDataReader["Contact"],
+                            Address = (string)sqlDataReader["Address"],
+                            DOB = (DateTime)sqlDataReader["DOB"],
+                            Age = (int)sqlDataReader["Age"],
+                            Gender = (string)sqlDataReader["Gender"],
+                            PatientImage = (string)sqlDataReader["PatientImage"],
+                            IsTrash = (bool)sqlDataReader["IsTrash"],
+                            CreatedAt = (DateTime)sqlDataReader["CreatedAt"],
+                            UpdatedAt = (DateTime)sqlDataReader["UpdatedAt"]
                         };
-
-
-
-
+                        patients.Add(patientModel);
                     }
+                    return patients.ToList();
                 }
+                return null;
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+
+            }
+            finally
+            {
+                sqlConnection.Close();
 
             }
 

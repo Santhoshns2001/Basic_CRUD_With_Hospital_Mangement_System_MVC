@@ -118,5 +118,12 @@ namespace Repository.Services
             
         }
 
+
+
+        public PatientModel FetchByDoctorId(int DoctorId)
+        {
+
+        }
+
     }
 }

@@ -13,3 +13,4 @@ C:\Users\Admin\source\repos\Hospital_Management_System\Repositary\obj\Debug\net6
 C:\Users\Admin\source\repos\Hospital_Management_System\Repositary\obj\Debug\net6.0\refint\Repository.dll
 C:\Users\Admin\source\repos\Hospital_Management_System\Repositary\obj\Debug\net6.0\Repository.pdb
 C:\Users\Admin\source\repos\Hospital_Management_System\Repositary\obj\Debug\net6.0\ref\Repository.dll
+C:\Users\Admin\source\repos\Hospital_Management_System\Repositary\obj\Debug\net6.0\Repository.sourcelink.json
