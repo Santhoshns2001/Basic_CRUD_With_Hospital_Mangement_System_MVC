@@ -23,9 +23,23 @@ namespace Business.Services
             return patientRepo.RegisterPatient(patient);
         }
 
-        public List<PatientModel> FetchAllPatients()
+        public List<PatientModel> GetAllPatients()
         {
-            return patientRepo.GetAllPatient();
+            return patientRepo.GetAllPatients();
+        }
+
+        public PatientModel GetPatientById(int patientId)
+        {
+            return patientRepo.GetPatientById(patientId);
+        }
+        public bool UpdatePatient(PatientModel patient)
+        {
+            return patientRepo.UpdatePatient(patient);
+        }
+        public bool DeletePatientConfirmed(int patientId)
+        {
+            return patientRepo.DeletePatientConfirmed(patientId);
         }
     }
+
 }

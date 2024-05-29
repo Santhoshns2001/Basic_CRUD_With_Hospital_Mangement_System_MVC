@@ -13,7 +13,6 @@ namespace Repository.Interfaces
         public List<DoctorModel> FetchAllDocs();
         public DoctorModel FetchByDoctorId(int doctorId);
         public bool UpdateDoctor(DoctorModel doctorModel);
-
         public bool DeleteDoctorRecord(int doctorId);
     }
 }

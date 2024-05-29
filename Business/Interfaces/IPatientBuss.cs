@@ -10,6 +10,10 @@ namespace Business.Interfaces
     public interface IPatientBuss
     {
         public bool RegisterPatient(PatientModel patient);
-        public List<PatientModel> FetchAllPatients();
+        public List<PatientModel> GetAllPatients();
+
+        public PatientModel GetPatientById(int patientId);
+        public bool UpdatePatient(PatientModel patient);
+        public bool DeletePatientConfirmed(int patientId);
     }
 }

@@ -39,7 +39,7 @@ namespace Hospital_Management_System.Controllers
         [HttpGet]
         public IActionResult GetAllPatients()
         {
-            List<PatientModel> patients = patientBuss.FetchAllPatients().ToList();
+            List<PatientModel> patients = patientBuss.GetAllPatients().ToList();
             if (patients.Any())
             {
                 return View(patients);
@@ -50,5 +50,73 @@ namespace Hospital_Management_System.Controllers
             }
         }
 
+        [HttpGet]
+        [Route("GetByPatId/{id}")]
+        public IActionResult GetByPatientId(int id)
+        {
+            if(id == 0)
+                return BadRequest();
+
+            PatientModel patient=patientBuss.GetPatientById(id);
+            if(patient == null)
+            {
+                return NotFound("unable to find ");
+            }
+            else
+            {
+                return View(patient);
+            }
+        }
+
+
+        [HttpGet]
+        public IActionResult UpdatePatient(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            PatientModel patient = patientBuss.GetPatientById(id);
+            if (patient == null)
+            {
+                return NotFound();
+            }
+            return View(patient);
+        }
+
+        [HttpPost]
+        public IActionResult UpdatePatient(int id, PatientModel patient)
+        {
+            if (id != patient.PatientId)
+            {
+                return NotFound("patient id mismatch");
+            }
+            bool result = patientBuss.UpdatePatient(patient);
+            if (result) return RedirectToAction("GetAllPatients");
+            return NotFound("unable to update patient details");
+
+        }
+
+
+        [HttpGet]
+        public IActionResult DeletePatient(int id)
+        {
+            if(id==0||id==null) return NotFound("id is"+id);
+            PatientModel patient=patientBuss.GetPatientById(id);
+            if (patient == null) { return NotFound("doctor not found"); }
+            return View(patient);
+
+        }
+
+        [HttpPost,ActionName("DeletePatient")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeletePatientConfirmed(int id)
+        {
+            if (id == 0) { return BadRequest(); }
+         
+           bool result= patientBuss.DeletePatientConfirmed(id);
+            if (result) return RedirectToAction("GetAllPatients");
+            return NotFound("unable to delete the patient ");
+        }
     }
 }

@@ -58,7 +58,7 @@ namespace Repository.Services
             return false;
         }
 
-        public List<PatientModel> GetAllPatient()
+        public List<PatientModel> GetAllPatients()
         {
             List<PatientModel> patients = new List<PatientModel>();
 
@@ -108,6 +108,115 @@ namespace Repository.Services
 
 
 
+        }
+
+        public PatientModel GetPatientById(int patientId)
+        {
+            PatientModel patient = null;
+            try
+            {
+                if (sqlConnection != null)
+                {
+                    SqlCommand cmd = new SqlCommand("usp_FetchByPatientId", sqlConnection);
+                    cmd.CommandType= CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@patientid", patientId);
+                    sqlConnection.Open();
+                    SqlDataReader reader= cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                         patient = new PatientModel()
+                        {
+                            PatientId=(int)reader["PatientId"],
+                            FullName = (string)reader["FullName"],
+                            Email = (string)reader["Email"],
+                            Contact = (long)reader["Contact"],
+                            Address = (string)reader["Address"],
+                            DOB = (DateTime)reader["DOB"],
+                            Age = (int)reader["Age"],
+                            Gender = (string)reader["Gender"],
+                            PatientImage = (string)reader["PatientImage"],
+                            IsTrash = (bool)reader["IsTrash"],
+                            CreatedAt = (DateTime)reader["CreatedAt"],
+                            UpdatedAt = (DateTime)reader["UpdatedAt"]
+                        };
+                    }
+                    return patient;
+                }
+                else
+                {
+                    return null;
+                }
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+      public  bool UpdatePatient(PatientModel patient)
+        {
+            try
+            {
+                if (sqlConnection != null)
+                {
+                    SqlCommand cmd = new SqlCommand("usp_UpdatePatient", sqlConnection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@patientid", patient.PatientId);
+                    cmd.Parameters.AddWithValue("fullName", patient.FullName);
+                    cmd.Parameters.AddWithValue("@email", patient.Email);
+                    cmd.Parameters.AddWithValue("@contact", patient.Contact);
+                    cmd.Parameters.AddWithValue("address", patient.Address);
+                    cmd.Parameters.AddWithValue("@dob", patient.DOB);
+                    cmd.Parameters.AddWithValue("@gender", patient.Gender);
+                    cmd.Parameters.AddWithValue("patientImage", patient.PatientImage);
+                    sqlConnection.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    throw new Exception("connection is not estblished properly");
+                    return false; 
+                }
+
+
+
+
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
+        }
+
+       public bool DeletePatientConfirmed(int patientId)
+        {
+            try
+            {
+                if(sqlConnection != null)
+                {
+                    SqlCommand cmd = new SqlCommand("usp_DeletePatient", sqlConnection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@patientid",patientId);
+                    sqlConnection.Open();
+                    cmd.ExecuteNonQuery();
+                    return true;
+                }
+                else
+                {
+                    throw new Exception("connection is not established ");
+                }
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                sqlConnection.Close();
+            }
         }
     }
 }

@@ -7,7 +7,7 @@
 <h1>GetAllPatients</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="RegisterPatient">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -91,9 +91,9 @@
                 @Html.DisplayFor(modelItem => item.UpdatedAt)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                    @Html.ActionLink("Edit", "UpdatePatient", new { id = item.PatientId }) |
+                    @Html.ActionLink("Details", "GetByPatientId", new { id = item.PatientId }) |
+                    @Html.ActionLink("Delete", "DeletePatient", new { id=item.PatientId })
             </td>
         </tr>
 }

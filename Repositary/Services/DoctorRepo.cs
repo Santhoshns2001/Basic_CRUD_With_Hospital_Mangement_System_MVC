@@ -155,13 +155,11 @@ namespace Repository.Services
                         };
                     }
                     return doctor;
-
                 }
                 else
                 {
                     return null;
                 }
-
             }catch(Exception e)
             {
                 throw e;

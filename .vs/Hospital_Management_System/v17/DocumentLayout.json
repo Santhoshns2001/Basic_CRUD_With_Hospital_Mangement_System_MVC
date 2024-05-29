@@ -3,20 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\views\\patient\\getallpatients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\views\\patient\\getallpatients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\views\\patient\\deletepatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\views\\patient\\deletepatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\business\\services\\patientbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|solutionrelative:business\\services\\patientbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\business\\interfaces\\ipatientbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|solutionrelative:business\\interfaces\\ipatientbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\controllers\\doctorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\services\\doctorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|solutionrelative:repositary\\services\\doctorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\services\\patientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|solutionrelative:repositary\\services\\patientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\business\\services\\doctorbussiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|solutionrelative:business\\services\\doctorbussiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\business\\interfaces\\idoctorbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|solutionrelative:business\\interfaces\\idoctorbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\interfaces\\ipatientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|solutionrelative:repositary\\interfaces\\ipatientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\interfaces\\idoctorrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +46,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DeletePatient.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Patient\\DeletePatient.cshtml",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Views\\Patient\\DeletePatient.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Patient\\DeletePatient.cshtml",
+              "RelativeToolTip": "Hospital_Management_System\\Views\\Patient\\DeletePatient.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAtwAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T07:08:21.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\DoctorController.cs",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Controllers\\DoctorController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\DoctorController.cs",
+              "RelativeToolTip": "Hospital_Management_System\\Controllers\\DoctorController.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAAAHQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T06:56:51.629Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -39,66 +81,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DoctorController.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\DoctorController.cs",
-              "RelativeDocumentMoniker": "Hospital_Management_System\\Controllers\\DoctorController.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\DoctorController.cs",
-              "RelativeToolTip": "Hospital_Management_System\\Controllers\\DoctorController.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAAB8AAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T11:46:48.352Z",
+              "Title": "GetAllPatients.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Patient\\GetAllPatients.cshtml",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Views\\Patient\\GetAllPatients.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Patient\\GetAllPatients.cshtml",
+              "RelativeToolTip": "Hospital_Management_System\\Views\\Patient\\GetAllPatients.cshtml",
+              "ViewState": "AQIAAFIAAAAAAAAAAADgv1kAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-29T06:31:31.344Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DoctorBussiness.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Services\\DoctorBussiness.cs",
-              "RelativeDocumentMoniker": "Business\\Services\\DoctorBussiness.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Services\\DoctorBussiness.cs",
-              "RelativeToolTip": "Business\\Services\\DoctorBussiness.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAAC0AAAA7AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T11:45:34.548Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IDoctorBuss.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Interfaces\\IDoctorBuss.cs",
-              "RelativeDocumentMoniker": "Business\\Interfaces\\IDoctorBuss.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Interfaces\\IDoctorBuss.cs",
-              "RelativeToolTip": "Business\\Interfaces\\IDoctorBuss.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAABMAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T11:45:16.441Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DoctorRepo.cs",
-              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\DoctorRepo.cs",
-              "RelativeDocumentMoniker": "Repositary\\Services\\DoctorRepo.cs",
-              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\DoctorRepo.cs",
-              "RelativeToolTip": "Repositary\\Services\\DoctorRepo.cs",
-              "ViewState": "AQIAADMAAAAAAAAAAAAAADgAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T10:47:18.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "IDoctorRepo.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Interfaces\\IDoctorRepo.cs",
               "RelativeDocumentMoniker": "Repositary\\Interfaces\\IDoctorRepo.cs",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Interfaces\\IDoctorRepo.cs",
               "RelativeToolTip": "Repositary\\Interfaces\\IDoctorRepo.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABAAAAA1AAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-28T10:45:25.455Z",
+              "WhenOpened": "2024-05-29T04:07:35.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Hospital_Management_System\\Controllers\\PatientController.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAGcAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T18:00:05.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PatientBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Services\\PatientBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\PatientBusiness.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Services\\PatientBusiness.cs",
+              "RelativeToolTip": "Business\\Services\\PatientBusiness.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAACYAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:59:23.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPatientBuss.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Interfaces\\IPatientBuss.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\IPatientBuss.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Interfaces\\IPatientBuss.cs",
+              "RelativeToolTip": "Business\\Interfaces\\IPatientBuss.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAA8AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:59:11.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\PatientRepo.cs",
+              "RelativeDocumentMoniker": "Repositary\\Services\\PatientRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\PatientRepo.cs",
+              "RelativeToolTip": "Repositary\\Services\\PatientRepo.cs",
+              "ViewState": "AQIAALkAAAAAAAAAAAAAAMQAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:33:56.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IPatientRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Interfaces\\IPatientRepo.cs",
+              "RelativeDocumentMoniker": "Repositary\\Interfaces\\IPatientRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Interfaces\\IPatientRepo.cs",
+              "RelativeToolTip": "Repositary\\Interfaces\\IPatientRepo.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-28T17:21:20.866Z",
               "EditorCaption": ""
             }
           ]

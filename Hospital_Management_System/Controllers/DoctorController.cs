@@ -114,7 +114,7 @@ namespace Hospital_Management_System.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             if (id == 0)
-                return View("Index");
+                return BadRequest();
            bool result= doctorBuss.DeleteDoctorRecord(id);
             if(result) return RedirectToAction("FetchAllDoctors");
             return NotFound("Failed to delete");
