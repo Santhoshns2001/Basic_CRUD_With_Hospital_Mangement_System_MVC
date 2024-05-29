@@ -40,6 +40,16 @@ namespace Business.Services
         {
             return patientRepo.DeletePatientConfirmed(patientId);
         }
+
+        public PatientModel Login(LoginModel loginModel)
+        {
+            return patientRepo.Login(loginModel);
+        }
+        //public PatientModel LoginPatient(LoginModel model)
+        //{
+        //    return patientRepo.LoginPatient(model);
+        //}
     }
+
 
 }

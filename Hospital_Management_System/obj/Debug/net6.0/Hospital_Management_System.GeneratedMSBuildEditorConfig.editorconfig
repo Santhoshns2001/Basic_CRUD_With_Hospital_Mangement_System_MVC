@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Admin\source\repos\Hospital_Management_System\Hospital_Management_System
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Appointment/CreateAppointment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcQ3JlYXRlQXBwb2ludG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Appointment/GetAllAppointments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcR2V0QWxsQXBwb2ludG1lbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Appointment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwb2ludG1lbnRcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Doctor/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9jdG9yXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -64,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Patient/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Patient/LoginPatient.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF0aWVudFxMb2dpblBhdGllbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/source/repos/Hospital_Management_System/Hospital_Management_System/Views/Patient/RegisterPatient.cshtml]

@@ -15,5 +15,8 @@ namespace Business.Interfaces
         public PatientModel GetPatientById(int patientId);
         public bool UpdatePatient(PatientModel patient);
         public bool DeletePatientConfirmed(int patientId);
+
+        public PatientModel Login(LoginModel loginModel);
+       // public PatientModel LoginPatient(LoginModel model);
     }
 }

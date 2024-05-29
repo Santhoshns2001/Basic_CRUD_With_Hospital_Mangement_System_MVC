@@ -10,9 +10,9 @@ C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.sourcelink.json
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.csproj.Up2Date
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.dll
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\refint\Business.dll
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.pdb
 C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\ref\Business.dll
-C:\Users\Admin\source\repos\Hospital_Management_System\Business\obj\Debug\net6.0\Business.sourcelink.json

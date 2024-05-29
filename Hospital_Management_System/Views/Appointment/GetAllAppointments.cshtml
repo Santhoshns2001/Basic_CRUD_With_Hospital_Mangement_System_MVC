@@ -1,0 +1,71 @@
+﻿@model IEnumerable<CommonLayer.Model.AppointmentModel>
+
+@{
+    ViewData["Title"] = "GetAllAppointments";
+}
+
+<h1>GetAllAppointments</h1>
+
+<p>
+    <a asp-action="CreateAppointment">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctor_Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AppointmentDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StartTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EndTime)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Concerns)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AppointmentId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doctor_Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientId)
+            </td>
+            <td>
+                    @item.AppointmentDate.ToString("d")
+            </td>
+            <td>
+                    @item.StartTime.ToString("t")
+            </td>
+            <td>
+                    @item.EndTime.ToString("t")
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Concerns)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

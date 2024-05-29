@@ -18,5 +18,9 @@ namespace Repository.Interfaces
         public bool UpdatePatient(PatientModel patient);
 
         public bool DeletePatientConfirmed(int patientId);
+
+        public PatientModel Login(LoginModel loginModel);
+        //public PatientModel LoginPatient(LoginModel model);
+
     }
 }

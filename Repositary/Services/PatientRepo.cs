@@ -11,10 +11,10 @@ using System.Threading.Tasks;
 
 namespace Repository.Services
 {
-    public class PatientRepo :IPatientRepo
+    public class PatientRepo : IPatientRepo
     {
 
-       private readonly SqlConnection sqlConnection = new SqlConnection();
+        private readonly SqlConnection sqlConnection = new SqlConnection();
 
         private readonly string sqlConnectionString;
 
@@ -24,7 +24,7 @@ namespace Repository.Services
         {
             this.configuration = configuration;
             sqlConnectionString = configuration.GetConnectionString("DBConnection");
-            sqlConnection.ConnectionString= sqlConnectionString;
+            sqlConnection.ConnectionString = sqlConnectionString;
         }
 
 
@@ -47,7 +47,7 @@ namespace Repository.Services
                 cmd.ExecuteNonQuery();
                 return true;
 
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 throw ex;
             }
@@ -104,10 +104,6 @@ namespace Repository.Services
                 sqlConnection.Close();
 
             }
-
-
-
-
         }
 
         public PatientModel GetPatientById(int patientId)
@@ -118,15 +114,15 @@ namespace Repository.Services
                 if (sqlConnection != null)
                 {
                     SqlCommand cmd = new SqlCommand("usp_FetchByPatientId", sqlConnection);
-                    cmd.CommandType= CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
                     cmd.Parameters.AddWithValue("@patientid", patientId);
                     sqlConnection.Open();
-                    SqlDataReader reader= cmd.ExecuteReader();
+                    SqlDataReader reader = cmd.ExecuteReader();
                     while (reader.Read())
                     {
-                         patient = new PatientModel()
+                        patient = new PatientModel()
                         {
-                            PatientId=(int)reader["PatientId"],
+                            PatientId = (int)reader["PatientId"],
                             FullName = (string)reader["FullName"],
                             Email = (string)reader["Email"],
                             Contact = (long)reader["Contact"],
@@ -146,13 +142,17 @@ namespace Repository.Services
                 {
                     return null;
                 }
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 throw ex;
             }
+            finally
+            {
+                sqlConnection.Close();
+            }
         }
 
-      public  bool UpdatePatient(PatientModel patient)
+        public bool UpdatePatient(PatientModel patient)
         {
             try
             {
@@ -176,13 +176,9 @@ namespace Repository.Services
                 else
                 {
                     throw new Exception("connection is not estblished properly");
-                    return false; 
+                    return false;
                 }
-
-
-
-
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 throw ex;
             }
@@ -192,15 +188,15 @@ namespace Repository.Services
             }
         }
 
-       public bool DeletePatientConfirmed(int patientId)
+        public bool DeletePatientConfirmed(int patientId)
         {
             try
             {
-                if(sqlConnection != null)
+                if (sqlConnection != null)
                 {
                     SqlCommand cmd = new SqlCommand("usp_DeletePatient", sqlConnection);
                     cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@patientid",patientId);
+                    cmd.Parameters.AddWithValue("@patientid", patientId);
                     sqlConnection.Open();
                     cmd.ExecuteNonQuery();
                     return true;
@@ -209,7 +205,7 @@ namespace Repository.Services
                 {
                     throw new Exception("connection is not established ");
                 }
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 throw ex;
             }
@@ -218,5 +214,53 @@ namespace Repository.Services
                 sqlConnection.Close();
             }
         }
-    }
+        public PatientModel Login(LoginModel loginModel)
+        {
+            using (SqlConnection conn = sqlConnection)
+
+            {
+                SqlCommand cmd = new SqlCommand("usp_LoginPatient", conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("@patientid", loginModel.UserId);
+                cmd.Parameters.AddWithValue("@patientName", loginModel.UserName);
+                conn.Open();
+                SqlDataReader dataReader = cmd.ExecuteReader();
+
+                while (dataReader.Read())
+                {
+                    PatientModel model = new PatientModel();
+                    model.PatientId = Convert.ToInt32(dataReader["PatientId"]);
+                    model.FullName = dataReader["FullName"].ToString();
+                    return model;
+                }
+                return null;
+            }
+        }
+    
+                //public PatientModel LoginPatient(LoginModel patient)
+                // {
+                //     try
+                //     {
+                //         if (sqlConnection != null)
+                //         {
+                //             SqlCommand cmd = new SqlCommand("usp_LoginPatient", sqlConnection);
+                //             cmd.CommandType=CommandType.StoredProcedure;
+                //             cmd.Parameters.AddWithValue("@patientid", patient.UserId);
+                //             cmd.Parameters.AddWithValue("@patientName", patient.UserName);
+                //             sqlConnection.Open();
+                //             cmd.ExecuteNonQuery();
+                //             sqlConnection.Close();
+                //             return GetPatientById(patient.UserId);
+                //         }
+                //         else
+                //         {
+                //             throw new Exception("connection not been established properly");
+                //         }
+                //     }catch(Exception ex)
+                //     {
+                //         throw ex;
+                //     }
+                // }
+            }
 }

@@ -14,6 +14,10 @@ builder.Services.AddTransient<IDoctorRepo, DoctorRepo>();
 builder.Services.AddTransient<IPatientBuss, PatientBusiness>();
 builder.Services.AddTransient<IPatientRepo,PatientRepo>();
 
+builder.Services.AddTransient<IAppointmentBuss, AppointmentBusiness>();
+builder.Services.AddTransient<IAppointmentRepo,AppointementRepo>();
+
+
 
 var app = builder.Build();
 

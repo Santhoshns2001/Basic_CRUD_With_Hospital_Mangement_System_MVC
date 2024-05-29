@@ -5,8 +5,8 @@ C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.AssemblyInfo.cs
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.sourcelink.json
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.dll
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\refint\CommonLayer.dll
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.pdb
 C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\ref\CommonLayer.dll
-C:\Users\Admin\source\repos\Hospital_Management_System\CommonLayer\obj\Debug\net6.0\CommonLayer.sourcelink.json

@@ -28,12 +28,10 @@ namespace Hospital_Management_System.Controllers
         [HttpPost]
         public IActionResult RegisterPatient(PatientModel patientModel)
         {
-            bool response = patientBuss.RegisterPatient(patientModel);
+            bool result = patientBuss.RegisterPatient(patientModel);
+            if (result) return RedirectToAction("GetAllPatients");
+            return NotFound("Failed to insert patient");
 
-            if (response)
-                return View("Index");
-                return View(response);
-            
         }
 
         [HttpGet]
@@ -51,7 +49,7 @@ namespace Hospital_Management_System.Controllers
         }
 
         [HttpGet]
-        [Route("GetByPatId/{id}")]
+        //[Route("GetByPatId/{id}")]
         public IActionResult GetByPatientId(int id)
         {
             if(id == 0)
@@ -117,6 +115,25 @@ namespace Hospital_Management_System.Controllers
            bool result= patientBuss.DeletePatientConfirmed(id);
             if (result) return RedirectToAction("GetAllPatients");
             return NotFound("unable to delete the patient ");
+        }
+
+        [HttpGet]
+        public IActionResult LoginPatient()
+        {
+            return View();
+        }
+
+
+        [HttpPost]
+        //[Route("login/{patientid}/{patientName}")]
+        public IActionResult LoginPatient(LoginModel patient)
+        {
+            if (patient == null) return NotFound("module cannot be null");
+            if (patient.UserId==0 || patient.UserName == null) { return NotFound("Id or name is null "); }
+            PatientModel result = patientBuss.Login(patient);
+            if (result == null) return NotFound("unable to login patient");
+            return RedirectToAction("GetByPatientId", new { Id=patient.UserId });
+            //return RedirectToAction("GetEmpById", new { Id = result.EmployeeId});
         }
     }
 }
