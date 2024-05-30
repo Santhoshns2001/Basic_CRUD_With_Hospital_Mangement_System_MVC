@@ -14,5 +14,6 @@ namespace Repository.Interfaces
         public DoctorModel FetchByDoctorId(int doctorId);
         public bool UpdateDoctor(DoctorModel doctorModel);
         public bool DeleteDoctorRecord(int doctorId);
+        public DoctorModel LoginDoctor(LoginModel loginModel);  
     }
 }

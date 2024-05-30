@@ -109,9 +109,19 @@
                 @Html.DisplayFor(modelItem => item.UpdatedAt)
             </td>
             <td>
-                @Html.ActionLink("Edit", "UpdateDoctor", new {  id=item.Doctor_Id }) |
-                @Html.ActionLink("Details", "FetchByDoctorId", new {  doctorId=item.Doctor_Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Doctor_Id })
+                    @if (Context.Session.GetInt32("PatientId") > 0)
+                    {
+                        @Html.ActionLink("Details", "FetchByDoctorId", new { doctorId = item.Doctor_Id })
+                    }
+                    else
+                    {
+                        @Html.ActionLink("Edit", "UpdateDoctor", new { id = item.Doctor_Id }) <br/>
+                        @Html.ActionLink("Details", "FetchByDoctorId", new { doctorId = item.Doctor_Id })  <br />
+                        @Html.ActionLink("Delete", "Delete", new { id = item.Doctor_Id }) 
+
+                        
+                    }
+                   
             </td>
         </tr>
 }

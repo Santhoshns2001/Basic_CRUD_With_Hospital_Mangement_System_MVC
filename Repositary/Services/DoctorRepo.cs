@@ -241,5 +241,27 @@ namespace Repository.Services
             }
         }
 
+        public DoctorModel LoginDoctor(LoginModel loginModel)
+        {
+            try
+            {
+                if (conn != null)
+                {
+                    SqlCommand cmd = new SqlCommand("usp_LoginDoctor", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@doctorid", loginModel.UserId);
+                    cmd.Parameters.AddWithValue("doctorname", loginModel.UserName);
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    return FetchByDoctorId(loginModel.UserId);
+                }
+                else
+                {
+                    throw new Exception("connection was not established");
+                }
+            }
+            catch (Exception ex) { throw ex; }
+        }
     }
 }

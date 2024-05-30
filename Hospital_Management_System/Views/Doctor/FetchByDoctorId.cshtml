@@ -103,6 +103,10 @@
     </dl>
 </div>
 <div>
+    @if (Context.Session.GetInt32("PatientId") > 0)
+    {
+        <a asp-area="" class="btn btn-primary" asp-controller="Appointment" asp-action="CreateAppointment">Make Appointment</a>
+    }
     @Html.ActionLink("Details", "FetcByDoctord", new { id = Model.Doctor_Id  }) |
     <a asp-action="FetchAllDoctors">Back to List</a>
 </div>

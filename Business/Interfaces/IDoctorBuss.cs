@@ -18,5 +18,7 @@ namespace Business.Interfaces
         public bool UpdateDoctor(DoctorModel doctorModel);
 
         public bool DeleteDoctorRecord(int doctorId);
+
+        public DoctorModel LoginDoctor(LoginModel loginModel);
     }
 }

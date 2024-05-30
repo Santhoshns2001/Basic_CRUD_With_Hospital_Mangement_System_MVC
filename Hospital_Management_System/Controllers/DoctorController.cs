@@ -50,13 +50,14 @@ namespace Hospital_Management_System.Controllers
         }
 
         [HttpGet]
-        [Route("GetById/{DoctorId}")]
+       // [Route("GetById/{DoctorId}")]
         public IActionResult FetchByDoctorId(int doctorId)
         {
             DoctorModel doctor = doctorBuss.FetchByDoctorId(doctorId);
 
             if (doctor != null)
             {
+                HttpContext.Session.SetInt32("Doctor_Id", doctorId);
                 return View(doctor);
             }
             else
@@ -120,6 +121,22 @@ namespace Hospital_Management_System.Controllers
             return NotFound("Failed to delete");
         }
 
+        [HttpGet]
+        public IActionResult LoginDoctor()
+        {
+            return View();
+        }
 
+        [HttpPost]
+        public IActionResult LoginDoctor(LoginModel model)
+        {
+            if (model == null) { return NotFound("login module cannot be empty"); }
+            if (model.UserId == 0 || model.UserName == null) { return NotFound("userid or username cannot be empty"); }
+            DoctorModel doctor = doctorBuss.LoginDoctor(model);
+            if (doctor == null) { return NotFound("unable to login"); }
+            return RedirectToAction("FetchByDoctorId", new { doctorId = model.UserId });
+        }
+
+       
     }
 }

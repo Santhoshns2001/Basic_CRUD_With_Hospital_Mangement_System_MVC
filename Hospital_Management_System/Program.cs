@@ -1,4 +1,4 @@
-using Business.Interfaces;
+   using Business.Interfaces;
 using Business.Services;
 using Repository.Interfaces;
 using Repository.Services;
@@ -17,7 +17,12 @@ builder.Services.AddTransient<IPatientRepo,PatientRepo>();
 builder.Services.AddTransient<IAppointmentBuss, AppointmentBusiness>();
 builder.Services.AddTransient<IAppointmentRepo,AppointementRepo>();
 
-
+builder.Services.AddSession(options =>
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(120);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
 
 var app = builder.Build();
 
@@ -31,7 +36,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();

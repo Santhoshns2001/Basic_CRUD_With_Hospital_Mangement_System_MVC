@@ -128,12 +128,19 @@ namespace Hospital_Management_System.Controllers
         //[Route("login/{patientid}/{patientName}")]
         public IActionResult LoginPatient(LoginModel patient)
         {
+            
             if (patient == null) return NotFound("module cannot be null");
             if (patient.UserId==0 || patient.UserName == null) { return NotFound("Id or name is null "); }
             PatientModel result = patientBuss.Login(patient);
-            if (result == null) return NotFound("unable to login patient");
-            return RedirectToAction("GetByPatientId", new { Id=patient.UserId });
-            //return RedirectToAction("GetEmpById", new { Id = result.EmployeeId});
+            if (result != null)
+            {
+                HttpContext.Session.SetInt32("PatientId", patient.UserId);
+                return RedirectToAction("GetByPatientId", new { Id=patient.UserId });
+            }
+            else return NotFound("unable to login patient");
+
         }
+
+       
     }
 }
