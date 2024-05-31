@@ -1,0 +1,20 @@
+﻿.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ensure the row takes full viewport height */
+    background-image: url("https://cdn.wallpapersafari.com/25/64/6jVwBz.jpg")!important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 100%;
+  
+}
+
+form-control {
+    background: rgba(0,0,0,0.3)!important;
+}

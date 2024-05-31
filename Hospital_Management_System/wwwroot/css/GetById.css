@@ -1,0 +1,12 @@
+﻿.row{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:lightgreen;
+   width:800px;
+}
+
+h4{
+   color:red;
+}

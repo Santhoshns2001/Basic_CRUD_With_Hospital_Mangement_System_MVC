@@ -5,8 +5,40 @@
       "PackagePath": "staticwebassets\\Hospital_Management_System.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\Register.css",
-      "PackagePath": "staticwebassets\\css\\Register.css"
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\CreateAppointment.css",
+      "PackagePath": "staticwebassets\\css\\CreateAppointment.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\Delete.css",
+      "PackagePath": "staticwebassets\\css\\Delete.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\GetAll.css",
+      "PackagePath": "staticwebassets\\css\\GetAll.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\GetById.css",
+      "PackagePath": "staticwebassets\\css\\GetById.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\Login.css",
+      "PackagePath": "staticwebassets\\css\\Login.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\LoginPatient.css",
+      "PackagePath": "staticwebassets\\css\\LoginPatient.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\RegisterDoctor.css",
+      "PackagePath": "staticwebassets\\css\\RegisterDoctor.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\RegisterPatient.css",
+      "PackagePath": "staticwebassets\\css\\RegisterPatient.css"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\Update.css",
+      "PackagePath": "staticwebassets\\css\\Update.css"
     },
     {
       "Id": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\site.css",

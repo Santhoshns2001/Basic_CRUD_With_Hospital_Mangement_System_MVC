@@ -3,7 +3,7 @@
 @{
     ViewData["Title"] = "UpdateDoctor";
 }
-
+<link rel="stylesheet" href="~/css/Update.css" asp-append-version="true" />
 <h1>UpdateDoctor</h1>
 
 <h4>DoctorModel</h4>
@@ -12,34 +12,34 @@
     <div class="col-md-4">
         <form asp-action="UpdateDoctor">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Doctor_Id" class="control-label"></label>
-                <input asp-for="Doctor_Id" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Doctor_Id" class="control-label"></label> *@
+                <input asp-for="Doctor_Id" placeholder="Doctor_Id" class="form-control" />
                 <span asp-validation-for="Doctor_Id" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="FullName" class="control-label"></label>
-                <input asp-for="FullName" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="FullName" class="control-label"></label> *@
+                <input asp-for="FullName" placeholder="FullName" class="form-control" />
                 <span asp-validation-for="FullName" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Email" class="control-label"></label> *@
+                <input asp-for="Email" placeholder="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Contact" class="control-label"></label>
-                <input asp-for="Contact" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Contact" class="control-label"></label> *@
+                <input asp-for="Contact" placeholder="Contact" class="form-control" />
                 <span asp-validation-for="Contact" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Address" class="control-label"></label>
-                <input asp-for="Address" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Address" class="control-label"></label> *@
+                <input asp-for="Address" placeholder="Address" class="form-control" />
                 <span asp-validation-for="Address" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="DOB" class="control-label"></label>
-                <input asp-for="DOB" type="date" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="DOB" class="control-label"></label> *@
+                <input asp-for="DOB" placeholder="DOB" type="date" class="form-control" />
                 <span asp-validation-for="DOB" class="text-danger"></span>
             </div>
            @*  <div class="form-group">
@@ -47,30 +47,30 @@
                 <input asp-for="Age" class="form-control" />
                 <span asp-validation-for="Age" class="text-danger"></span>
             </div> *@
-            <div class="form-group">
-                <label asp-for="Gender" class="control-label"></label>
+            <div class="form-group mt-4">
+                @* <label asp-for="Gender" class="control-label"></label> *@
                 @Html.RadioButtonFor(m => m.Gender, "Male") Male
                 @Html.RadioButtonFor(m => m.Gender, "Female") Female
                 <span asp-validation-for="Gender" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Qualification" class="control-label"></label>
-                <input asp-for="Qualification" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Qualification" class="control-label"></label> *@
+                <input asp-for="Qualification" placeholder="Qualification" class="form-control" />
                 <span asp-validation-for="Qualification" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Specailization" class="control-label"></label>
-                <input asp-for="Specailization" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Specailization" class="control-label"></label> *@
+                <input asp-for="Specailization" placeholder="Specailization" class="form-control" />
                 <span asp-validation-for="Specailization" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Experience" class="control-label"></label>
-                <input asp-for="Experience" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="Experience" class="control-label"></label> *@
+                <input asp-for="Experience" placeholder="Experience" class="form-control" />
                 <span asp-validation-for="Experience" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="DoctorImage" class="control-label"></label>
-                <input asp-for="DoctorImage" class="form-control" />
+            <div class="form-group mt-4">
+                @* <label asp-for="DoctorImage" class="control-label"></label> *@
+                <input asp-for="DoctorImage" placeholder="DoctorImage" class="form-control" />
                 <span asp-validation-for="DoctorImage" class="text-danger"></span>
             </div>
             @* <div class="form-group form-check">
@@ -88,8 +88,9 @@
                 <input asp-for="UpdatedAt" class="form-control" />
                 <span asp-validation-for="UpdatedAt" class="text-danger"></span>
             </div> *@
-            <div class="form-group">
+            <div class="form-group mt-4 mb-4 " align="center">
                 <input type="submit" value="Save" class="btn btn-primary" />
+              
             </div>
         </form>
     </div>

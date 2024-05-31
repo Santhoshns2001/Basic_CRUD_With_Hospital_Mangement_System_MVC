@@ -1,0 +1,14 @@
+﻿.table{
+    align-items:center;
+    background-color:lightsteelblue;
+    border: solid 2px black;
+}
+
+h1{
+    color:darkblue 
+}
+thead{
+    background-color:coral;
+}
+
+
