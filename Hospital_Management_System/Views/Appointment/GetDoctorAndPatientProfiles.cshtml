@@ -1,0 +1,113 @@
+﻿@model IEnumerable<CommonLayer.Model.DoctorPatientModel>
+
+@{
+    ViewData["Title"] = "GetDoctorAndPatientProfiles";
+}
+
+<h1>GetDoctorAndPatientProfiles</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DoctorImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientContact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientDOB)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientAge)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientImage)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientIsTrash)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientCreatedAt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PatientUpdatedAt)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DoctorImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientContact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientDOB)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientAge)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientImage)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientIsTrash)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientCreatedAt)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PatientUpdatedAt)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

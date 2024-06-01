@@ -38,5 +38,13 @@ namespace Hospital_Management_System.Controllers
             if (appointments != null) { return  View(appointments); }
             else return NotFound("unable to fetch appointments");
         }
+
+        [HttpGet]
+        public IActionResult GetDoctorAndPatientProfiles()
+        {
+           List<DoctorPatientModel> model= appointmentBuss.GetDoctorAndPatientProfiles();
+            return View(model);
+        }
+
     }
 }

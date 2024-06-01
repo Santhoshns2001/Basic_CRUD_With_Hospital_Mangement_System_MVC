@@ -12,5 +12,9 @@ namespace Business.Interfaces
         public bool CreateAppointment(AppointmentModel appointmentmodel);
 
         public List<AppointmentModel> GetAllAppointments();
+
+        public List<DoctorPatientModel> GetDoctorAndPatientProfiles();
     }
+
+  
 }

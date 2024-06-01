@@ -3,6 +3,54 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\wwwroot\\css\\getall.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\wwwroot\\css\\getall.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\wwwroot\\css\\loginpatient.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\wwwroot\\css\\loginpatient.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\views\\patient\\loginpatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\views\\patient\\loginpatient.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\wwwroot\\css\\login.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\services\\appointementrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|solutionrelative:repositary\\services\\appointementrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D542C0E-5933-4444-9652-E13D52B05BB5}|CommonLayer\\CommonLayer.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\commonlayer\\model\\doctorpatientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D542C0E-5933-4444-9652-E13D52B05BB5}|CommonLayer\\CommonLayer.csproj|solutionrelative:commonlayer\\model\\doctorpatientmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\services\\patientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|solutionrelative:repositary\\services\\patientrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\controllers\\appointmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\repositary\\interfaces\\iappointmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{305238B1-CB78-41B8-8813-5E7BB42279E5}|Repositary\\Repository.csproj|solutionrelative:repositary\\interfaces\\iappointmentrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\business\\services\\appointmentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|solutionrelative:business\\services\\appointmentbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\business\\interfaces\\iappointmentbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D365980-3D1F-475E-BF04-1D903A38FEC3}|Business\\Business.csproj|solutionrelative:business\\interfaces\\iappointmentbuss.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\views\\appointment\\getdoctorandpatientprofiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\views\\appointment\\getdoctorandpatientprofiles.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|c:\\users\\admin\\source\\repos\\hospital_management_system\\hospital_management_system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{7BD5D910-FBCE-430B-8C82-307449DC2001}|Hospital_Management_System\\Hospital_Management_System.csproj|solutionrelative:hospital_management_system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -27,15 +75,169 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GetAll.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\GetAll.css",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\wwwroot\\css\\GetAll.css",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\GetAll.css",
+              "RelativeToolTip": "Hospital_Management_System\\wwwroot\\css\\GetAll.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-01T09:32:00.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginPatient.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\LoginPatient.css",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\wwwroot\\css\\LoginPatient.css",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\LoginPatient.css",
+              "RelativeToolTip": "Hospital_Management_System\\wwwroot\\css\\LoginPatient.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-01T09:21:57.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.css",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\Login.css",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\wwwroot\\css\\Login.css",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\wwwroot\\css\\Login.css",
+              "RelativeToolTip": "Hospital_Management_System\\wwwroot\\css\\Login.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-01T09:21:53.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginPatient.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Patient\\LoginPatient.cshtml",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Views\\Patient\\LoginPatient.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Patient\\LoginPatient.cshtml",
+              "RelativeToolTip": "Hospital_Management_System\\Views\\Patient\\LoginPatient.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T09:21:26.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PatientRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\PatientRepo.cs",
+              "RelativeDocumentMoniker": "Repositary\\Services\\PatientRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\PatientRepo.cs",
+              "RelativeToolTip": "Repositary\\Services\\PatientRepo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T06:08:10.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GetDoctorAndPatientProfiles.cshtml",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Appointment\\GetDoctorAndPatientProfiles.cshtml",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Views\\Appointment\\GetDoctorAndPatientProfiles.cshtml",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Appointment\\GetDoctorAndPatientProfiles.cshtml",
+              "RelativeToolTip": "Hospital_Management_System\\Views\\Appointment\\GetDoctorAndPatientProfiles.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-01T05:55:03.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppointementRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\AppointementRepo.cs",
+              "RelativeDocumentMoniker": "Repositary\\Services\\AppointementRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Services\\AppointementRepo.cs",
+              "RelativeToolTip": "Repositary\\Services\\AppointementRepo.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAAIEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:24:22.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IAppointmentRepo.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Interfaces\\IAppointmentRepo.cs",
+              "RelativeDocumentMoniker": "Repositary\\Interfaces\\IAppointmentRepo.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Repositary\\Interfaces\\IAppointmentRepo.cs",
+              "RelativeToolTip": "Repositary\\Interfaces\\IAppointmentRepo.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:24:10.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AppointmentBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Services\\AppointmentBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\AppointmentBusiness.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Services\\AppointmentBusiness.cs",
+              "RelativeToolTip": "Business\\Services\\AppointmentBusiness.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:22:33.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IAppointmentBuss.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Interfaces\\IAppointmentBuss.cs",
+              "RelativeDocumentMoniker": "Business\\Interfaces\\IAppointmentBuss.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Business\\Interfaces\\IAppointmentBuss.cs",
+              "RelativeToolTip": "Business\\Interfaces\\IAppointmentBuss.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAA8AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:20:56.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DoctorPatientModel.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\CommonLayer\\Model\\DoctorPatientModel.cs",
+              "RelativeDocumentMoniker": "CommonLayer\\Model\\DoctorPatientModel.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\CommonLayer\\Model\\DoctorPatientModel.cs",
+              "RelativeToolTip": "CommonLayer\\Model\\DoctorPatientModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAACAAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T05:17:13.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppointmentController.cs",
+              "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\AppointmentController.cs",
+              "RelativeDocumentMoniker": "Hospital_Management_System\\Controllers\\AppointmentController.cs",
+              "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Controllers\\AppointmentController.cs",
+              "RelativeToolTip": "Hospital_Management_System\\Controllers\\AppointmentController.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-01T04:37:42.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Hospital_Management_System\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\source\\repos\\Hospital_Management_System\\Hospital_Management_System\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Hospital_Management_System\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAswBwAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-31T17:24:58.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-31T17:24:58.761Z"
             }
           ]
         }

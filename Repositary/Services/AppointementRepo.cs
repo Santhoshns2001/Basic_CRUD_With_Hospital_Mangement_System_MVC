@@ -24,7 +24,7 @@ namespace Repository.Services
             SqlConnection.ConnectionString= sqlConnectionString;
         }
 
-        public  bool CreateAppointment(AppointmentModel appointmentmodel)
+       public   bool CreateAppointment(AppointmentModel appointmentmodel)
         {
             try
             {
@@ -92,6 +92,57 @@ namespace Repository.Services
             }
             catch (Exception ex) { throw ex; }
             finally {  SqlConnection.Close(); }
+        }
+       
+      public  List<DoctorPatientModel> GetDoctorAndPatientProfiles()
+        {
+            List<DoctorPatientModel> models = new List<DoctorPatientModel>();
+
+            try
+            {
+                if (SqlConnection != null)
+                {
+                    SqlCommand cmd = new SqlCommand("GetDoctorAndPatientProfiles", SqlConnection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlConnection.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        DoctorPatientModel doctorPatientModel = new DoctorPatientModel()
+                        {
+                            DoctorName = (string)reader["DoctorName"],
+                            DoctorImage = (string)reader["DoctorImage"],
+                            PatientId = (int)reader["PatientId"],
+                            PatientName = (string)reader["PatientName"],
+                            PatientEmail = (string)reader["PatientEmail"],
+                            PatientContact = (long)reader["PatientContact"],
+                            PatientAddress = (string)reader["PatientAddress"],
+                            PatientDOB = (DateTime)reader["PatientDOB"],
+                            PatientAge = (int)reader["PatientAge"],
+                            PatientGender = (string)reader["PatientGender"],
+                            PatientImage = (string)reader["PatientImage"],
+                            PatientIsTrash = (bool)reader["PatientIsTrash"],
+                            PatientCreatedAt = (DateTime)reader["PatientCreatedAt"],
+                            PatientUpdatedAt = (DateTime)reader["PatientUpdatedAt"]
+
+                        };
+                        models.Add(doctorPatientModel);
+                    }
+                    return models.ToList();
+                }
+                else
+                {
+                    throw new Exception("connections was not established");
+                }
+
+            }catch(Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                SqlConnection.Close();
+            }
         }
     }
 }

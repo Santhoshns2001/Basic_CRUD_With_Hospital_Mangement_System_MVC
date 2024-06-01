@@ -16,6 +16,8 @@ namespace Business.Services
         {
             this.appointmentRepo = appointmentRepo;   
         }
+
+
         public bool CreateAppointment(AppointmentModel appointmentmodel)
         {
             return appointmentRepo.CreateAppointment(appointmentmodel);
@@ -24,6 +26,11 @@ namespace Business.Services
         public List<AppointmentModel> GetAllAppointments()
         {
             return appointmentRepo.GetAllAppointments();
+        }
+
+       public List<DoctorPatientModel> GetDoctorAndPatientProfiles()
+        {
+            return appointmentRepo.GetDoctorAndPatientProfiles();
         }
     }
 }
